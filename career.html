@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instructor Enquiry Form | Kodeo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="career.css" rel="stylesheet">
+  <link rel="stylesheet" href="footer.css"/>
+  <link rel="stylesheet" href="navbar.css"/>
+  <!-- ✅ Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Services.html">Services</a></li>
+        <li><a class="active" href="#hero">Career</a></li>
+      </ul>
+  
+      <a href="index.html" class="logo">
+        <img src="logo.gif" alt="Kodeo Logo" class="logo-gif" />
+      </a>
+  
+      <ul class="nav-right">
+        <li><a href="./products.html">Product</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./contact_us.html">Contact</a></li>
+      </ul>
+  
+      <!-- Hamburger for Mobile -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  
+    <!-- Mobile menu links -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="./Services.html">Services</a></li>
+        <li><a href="./career.html">Career</a></li>
+        <li><a href="./products.html">Product</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./contact_us.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hiring-banner">
+    <div class="hiring-content">
+      <div class="hiring-text">
+        <h1>We're Hiring Instructors!</h1>
+        <p>Join our team of passionate educators and help shape future talent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="form-background"></div>
+  
+    <div class="form-container">
+      <h2>WHAT JOB DO YOU WANT TO POST?</h2>
+      <form id="enquiryForm" method="POST" enctype="multipart/form-data">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+  
+        <!-- Mobile Number -->
+        <div class="form-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" maxlength="10" required />
+        </div>
+  
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+  
+        <!-- Qualification -->
+        <div class="form-group">
+          <label for="qualification">Qualification</label>
+          <input type="text" id="qualification" name="qualification" required />
+        </div>
+  
+        <!-- Experience -->
+        <div class="form-group">
+          <label for="experience">Experience</label>
+          <select id="experience" name="experience" required>
+            <option value="" disabled selected>Select Experience</option>
+            <option value="0-1">0-1 Year</option>
+            <option value="1-2">1-2 Years</option>
+            <option value="2-3">2-3 Years</option>
+            <option value="3+">3+ Years</option>
+          </select>
+        </div>
+  
+        <!-- Previous Company -->
+        <div class="form-group">
+          <label for="prevCompany">Previous Company Name</label>
+          <input type="text" id="prevCompany" name="prevCompany" required />
+        </div>
+  
+        <!-- Designation -->
+        <div class="form-group">
+          <label for="Designation">Designation</label>
+          <input type="text" id="Designation" name="Designation" required />
+        </div>
+  
+        <!-- Skill -->
+        <div class="form-group">
+          <label for="skills">Select Skill</label>
+          <select id="skills" name="skills" required>
+            <option value="" disabled selected>Select a skill</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="HTML/CSS">HTML/CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React</option>
+            <option value="Node.js">Node.js</option>
+            <option value="DevOps">DevOps</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="Data Science">Data Science</option>
+            <option value="AI/ML">AI/ML</option>
+          </select>
+        </div>
+  
+        <!-- Relocate -->
+        <div class="form-group">
+          <label>Ready to Relocate</label>
+          <div class="relocate-options">
+            <div class="relocate-option" onclick="selectRelocate('Yes')">Yes</div>
+            <div class="relocate-option" onclick="selectRelocate('No')">No</div>
+          </div>
+          <input type="hidden" id="relocate" name="relocate" required />
+        </div>
+  
+        <!-- Skills Description -->
+        <div class="form-group">
+          <label for="skills-text">Your Skills</label>
+          <textarea id="skills-text" name="skills-text" rows="4" required></textarea>
+        </div>
+  
+        <!-- Resume Upload -->
+        <div class="form-group">
+          <label for="resume">Upload Resume</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
+        </div>
+  
+        <!-- Cover Letter Upload -->
+        <div class="form-group">
+          <label for="coverLetter">Upload Cover Letter</label>
+          <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx" />
+        </div>
+  
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+    
+      <div class="footer-box">
+        <img src="assets/img/images/Logo.jpg" alt="Kodeo Software Technology Logo" class="footer-logo">
+        <h4>Career</h4>
+        <p>We are a skilled team delivering innovative websites, apps, and software with reliable IT solutions.</p>
+        <div class="footer-social">
+          <a href="https://fb.me/Kodeosoftwaretechnology" target="blank" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/kodeosoftwaretechnology/" target="blank" class="instagram">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://t.me/infokodeo" target="blank" class="telegram">
+              <i class="fab fa-telegram-plane"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/kodeo-software-technology/?originalSubdomain=in" target="blank" class="linkedin">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+      </div>
+      
+      </div>
+  
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="./about_us.html">About US</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./contact_us.html">Contact</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./career.html">Career</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Our Terms and Conditions</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-box">
+        <h4>Our Services</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Website Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">App Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Digital Marketing / Project</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Android Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">IOS Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Creative Designs</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Database Management</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Cyber Security</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">IT Services</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-box footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone-alt"></i> +91 73850 53983</p>
+        <p><i class="fas fa-envelope"></i> info@kodeosoftwaretechnology.com</p>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="copyright">
+          &copy; Copyright <strong><span>Kodeo Software technology</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by Kodeo Software Technology
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="career.js" defer></script>
+  <script>
+  function selectRelocate(value) {
+    document.getElementById('relocate').value = value;
+    document.querySelectorAll('.relocate-option').forEach(btn => {
+      btn.classList.remove('selected');
+    });
+    event.target.classList.add('selected');
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const text = "WE ARE AT THE\nforefront of technology";
+    const typingElement = document.getElementById("typing-text");
+    let index = 0;
+  
+    function typeEffect() {
+      if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index) === "\n" ? "<br>" : text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 50); // Reduce delay for smoother effect
+      }
+    }
+  
+    typeEffect();
+  });
+</script>
+
+<style>
+  .relocate-option.selected {
+    background: #00ffff44;
+    border-color: #00ffff;
+  }
+</style>
+
+</body>
+</html>
