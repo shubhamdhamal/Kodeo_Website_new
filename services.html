@@ -85,18 +85,18 @@
   </div>
 </section>
 
-  <style>
-    /* ======= General Styles ======= */
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #0e0b1e; /* Dark background */
-  color: #f0f0f0; /* Light text */
-  margin: 0;
-  padding: 0;
-}
-
-/* ======= Header Section ======= */
-header {
+<style>
+  /* ======= General Styles ======= */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0e0b1e; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ======= Header Section ======= */
+  header {
     background: transparent !important;
     backdrop-filter: blur(10px) !important;
     position: fixed !important;
@@ -125,132 +125,163 @@ header {
   .navbar a:hover {
     color: #e1bdfb !important;
   }
-
-.hamburger {
-  display: none;
-}
-
-.mobile-menu {
-  display: none;
-}
-
-/* ======= Hero Section with Video Background ======= */
-.hero-section {
-  position: relative;
-  height: 60vh; /* Adjusted height to make it smaller */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* 100% height of the container (hero-section) */
-  object-fit: cover;
-  z-index: -1;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
-  z-index: -1;
-}
-
-.hero-content {
-  z-index: 2;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #d1cfff;
-}
-
-.hero-content .btn {
-  background-color: #5c6bc0;
-  color: white;
-  padding: 14px 30px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.hero-content .btn:hover {
-  background-color: #3f51b5; /* Darker purple on hover */
-}
-
-/* ======= Mobile Menu Styling ======= */
-@media (max-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
-
+  
   .hamburger {
-    display: block;
-    cursor: pointer;
+    display: none;
   }
-
-  .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: #fff;
-  }
-
+  
   .mobile-menu {
-    display: block;
-    background-color: #1a1a2e;
-    padding: 20px;
+    display: none;
+  }
+  
+  /* ======= Hero Section with Video Background ======= */
+  .hero-section {
+    position: relative;
+    height: 60vh; /* Adjusted height to make it smaller */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero-video {
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* 100% height of the container (hero-section) */
+    object-fit: cover;
+    z-index: -1;
   }
-
-  .mobile-menu ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    z-index: -1;
   }
-
-  .mobile-menu ul li {
-    margin: 10px 0;
+  
+  .hero-content {
+    z-index: 2;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
-
-  .mobile-menu ul li a {
-    color: #f0f0f0;
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d1cfff;
+  }
+  
+  .hero-content .btn {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 25px;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
   }
-
-  .mobile-menu ul li a:hover {
-    color: #b380ff; /* Light purple on hover */
+  
+  .hero-content .btn:hover {
+    background-color: #3f51b5; /* Darker purple on hover */
   }
-}
-
+  
+  /* ======= Mobile Menu Styling ======= */
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: #fff;
+    }
+  
+    .mobile-menu {
+      display: block;
+      background-color: #1a1a2e;
+      padding: 20px;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+    }
+  
+    .mobile-menu ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+  
+    .mobile-menu ul li {
+      margin: 10px 0;
+    }
+  
+    .mobile-menu ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+  
+    .mobile-menu ul li a:hover {
+      color: #b380ff; /* Light purple on hover */
+    }
+  }
+  
+  /* ======= Extra Responsiveness for Very Small Devices ======= */
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    
+    .hero-content .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+    
+    .navbar {
+      padding: 10px 15px !important;
+    }
+    
+    .mobile-menu {
+      width: 160px;
+      padding: 15px;
+      top: 50px;
+    }
+    
+    .mobile-menu ul li a {
+      font-size: 1rem;
+    }
+  }
   </style>
-
+  
 
   <!-- Services Section -->
   <section class="services-container">
@@ -460,75 +491,118 @@ header {
 
 <!-- ======= FAQ Section CSS ======= -->
 <style>
-.faq-section {
-  background-color: #1a1a2e; /* Dark background */
-  color: #f0f0f0; /* Light text color */
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.faq-section .section-title {
-  color: #b380ff;
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.faq-container {
-  max-width: 900px;
-  margin: auto;
-  text-align: left;
-}
-
-.faq-item {
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #23254d; /* Slightly lighter than the main background */
-}
-
-.faq-toggle {
-  width: 100%;
-  padding: 20px;
-  background-color: #1f2141; /* Darker background for the toggle */
-  border: none;
-  color: #fff;
-  font-size: 1.1rem;
-  text-align: left;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.faq-toggle:hover {
-  background-color: #3f4d8c; /* Slight hover effect */
-}
-
-.faq-content {
-  padding: 20px;
-  background-color: #2b2d56; /* Darker color for content */
-  color: #cfcfcf;
-  display: none;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.faq-toggle i {
-  transition: transform 0.3s ease;
-}
-
-.faq-toggle.open i {
-  transform: rotate(180deg); /* Rotate the icon when open */
-}
-
-.faq-item.open .faq-content {
-  display: block;
-}
-
-.faq-item.open .faq-toggle {
-  background-color: #3f4d8c; /* Change background when open */
-}
-</style>
+  .faq-section {
+    background-color: #1a1a2e; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .faq-section .section-title {
+    color: #b380ff;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .faq-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #23254d; /* Slightly lighter than the main background */
+  }
+  
+  .faq-toggle {
+    width: 100%;
+    padding: 20px;
+    background-color: #1f2141; /* Darker background for the toggle */
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-toggle:hover {
+    background-color: #3f4d8c; /* Slight hover effect */
+  }
+  
+  .faq-content {
+    padding: 20px;
+    background-color: #2b2d56; /* Darker color for content */
+    color: #cfcfcf;
+    display: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .faq-toggle i {
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-toggle.open i {
+    transform: rotate(180deg); /* Rotate the icon when open */
+  }
+  
+  .faq-item.open .faq-content {
+    display: block;
+  }
+  
+  .faq-item.open .faq-toggle {
+    background-color: #3f4d8c; /* Change background when open */
+  }
+  
+  /* ======= Responsive Adjustments ======= */
+  @media (max-width: 768px) {
+    .faq-section {
+      padding: 30px 15px;
+    }
+    
+    .faq-section .section-title {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    
+    .faq-toggle {
+      padding: 15px;
+      font-size: 1rem;
+    }
+    
+    .faq-content {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faq-section {
+      padding: 20px 10px;
+    }
+    
+    .faq-section .section-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    
+    .faq-toggle {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+    
+    .faq-content {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }
+  </style>
+  
 
 <!-- ======= FAQ Section JavaScript ======= -->
 <script>

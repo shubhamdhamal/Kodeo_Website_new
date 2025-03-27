@@ -1,309 +1,365 @@
 /* General Styles */
 
+/* Services Header Section */
+.services-header {
+  text-align: center;
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+  padding: 80px 20px;
+  color: white;
+  width: 100%;
+}
 
-    /* Services Header Section */
-    .services-header {
-      text-align: center;
-      background: transparent !important;
-      backdrop-filter: blur(10px) !important;
-      padding: 80px 20px;
-      color: white;
-      width: 100%;
-    }
+.services-header h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
 
+.services-header p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
 
-    .services-header h1 {
-      font-size: 38px;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
+.services-header .btn {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
 
-    .services-header p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
+.services-header .btn:hover {
+  background-color: #3f51b5;
+}
 
-    .services-header .btn {
-      background-color: #5c6bc0;
-      color: white;
-      padding: 14px 30px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background-color 0.3s ease;
-    }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .services-header {
+    padding: 60px 15px;
+  }
+  
+  .services-header h1 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+  
+  .services-header p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .services-header .btn {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+  }
+}
 
-    .services-header .btn:hover {
-      background-color: #3f51b5;
-    }
-
-  /* General Styles */
+@media (max-width: 480px) {
+  .services-header {
+    padding: 50px 10px;
+  }
+  
+  .services-header h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  
+  .services-header p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .services-header .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+/* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #252d44; /* Fresh and light background */
-    color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: #252d44; /* Fresh and light background */
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Services Section */
 .services {
-    padding: 60px 20px;
-    background-color: #ffffff; /* Clean white background */
-    text-align: center;
-    width: 100%;
+  padding: 60px 20px;
+  background-color: #ffffff; /* Clean white background */
+  text-align: center;
+  width: 100%;
 }
 
 .services h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    font-weight: 600;
-    color: #333;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #333;
 }
 
 .service-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 per row */
   gap: 30px;
-  padding: 0 70px; /* ✅ Add this to prevent edge contact */
+  padding: 0 70px; /* Prevent edge contact */
   box-sizing: border-box;
 }
 
-
 .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; /* ✅ Adds spacing between cards */
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Adds spacing between cards */
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-card {
+  width: 260px; /* Fixed width for consistent layout */
+  height: 200px;
+  padding: 30px 20px;
+  background-color: #2e344e;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-card img:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #7d7d7d;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #eae9eb;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  background-color: #3c426d;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .service-cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on small screens */
+    padding: 0 40px;
+  }
+  
+  .service-card img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-cards {
+    grid-template-columns: 1fr; /* 1 item per row on mobile devices */
+    padding: 0 20px;
   }
   
   .service-card {
-    width: 260px; /* ✅ Fixed width for consistent layout */
-    height: 200px;
-    padding: 30px 20px;
-    background-color: #2e344e;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
   }
   
   .service-card img {
     width: 50px;
     height: 50px;
-    margin-bottom: 12px;
-    transition: transform 0.4s ease;
   }
   
   .service-card h3 {
-    font-size: 1.1rem;
-    color: #f0f4f8;
-    margin: 0;
-    font-weight: 600;
+    font-size: 1rem;
   }
   
   .service-card p {
-    font-size: 0.95rem;
-    color: #ccc;
-    margin-top: 8px;
+    font-size: 0.9rem;
   }
-  
-  /* ✅ Hover animation preserved */
-  .service-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
-    background-color: #3c426d;
-  }
-  
-  .service-card:hover img {
-    transform: scale(1.1) rotate(3deg);
-  }
-  
-.service-card img {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
 }
 
-.service-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #7d7d7d;
+/* Technology Stack Section */
+.technology-stack {
+  padding: 60px 20px;
+  background: #06070b;
+  text-align: center;
+  width: 100%;
 }
 
-.service-card p {
-    font-size: 1rem;
-    color: #eae9eb;
+.technology-stack h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .service-cards {
-        grid-template-columns: repeat(3, 1fr); /* 3 items per row on medium screens */
-    }
+.tech-icons img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  transition: transform 0.3s ease;
 }
 
+.tech-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .service-cards {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row on small screens */
-    }
-    .service-card img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .service-card h3 {
-        font-size: 1.1rem;
-    }
+  .technology-stack {
+    padding: 50px 15px;
+  }
+  
+  .technology-stack h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .tech-icons img {
+    width: 45px;
+    height: 45px;
+    margin: 8px;
+  }
 }
 
 @media (max-width: 480px) {
-    .service-cards {
-        grid-template-columns: 1fr; /* 1 item per row on mobile devices */
-    }
-
-    .service-card {
-        padding: 20px;
-    }
-
-    .service-card img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .service-card h3 {
-        font-size: 1rem;
-    }
-
-    .service-card p {
-        font-size: 0.9rem;
-    }
+  .technology-stack {
+    padding: 40px 10px;
+  }
+  
+  .technology-stack h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+}
+/* ======= Industries We Serve Section ======= */
+.industries-we-serve {
+  padding: 80px 20px;
+  background: #252d44;
+  text-align: center;
+  width: 100%;
 }
 
-    /* Technology Stack Section */
-    .technology-stack {
-      padding: 60px 20px;
-      background: #06070b;
-      text-align: center;
-      width: 100%;
-    }
+.industries-we-serve h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
 
-    .technology-stack h2 {
-      font-size: 36px;
-      margin-bottom: 30px;
-    }
+.industries-we-serve p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
 
-    .tech-icons img {
-      width: 50px;
-      height: 50px;
-      margin: 10px;
-      transition: transform 0.3s ease;
-    }
+.industry-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
 
-    .tech-icons img:hover {
-      transform: scale(1.1);
-    }
+.industries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* 👈 key line */
+  padding: 40px 20px;
+}
 
-    /* Industries We Serve Section */
-    .industries-we-serve {
-      padding: 80px 20px;
-      background: #252d44;
-      text-align: center;
-      width: 100%;
-    }
+.industry-item {
+  width: 220px; /* Fixed width for grid */
+  margin: 10px; /* Adds extra spacing */
+  height: 180px;
+  padding: 30px 20px;
+  background-color: #373e5c;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
 
-    .industries-we-serve h2 {
-      font-size: 36px;
-      margin-bottom: 30px;
-    }
+.industry-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
 
-    .industries-we-serve p {
-      font-size: 1.1rem;
-      margin-bottom: 40px;
-    }
+.industry-item p {
+  font-size: 1rem;
+  color: #fafbfc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
-    .industry-icons {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 30px;
-        justify-items: center;
-        padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        box-sizing: border-box;
-      }
-      .industries-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px; /* 👈 key line */
-        padding: 40px 20px;
-      }
-      
-      .industry-item {
-        width: 220px; /* or any fixed width that fits your grid */
-margin: 10px; /* adds spacing just in case */
+/* Hover Effects */
+.industry-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  color: #0d0d0e;
+}
 
-        height: 180px;
-        padding: 30px 20px;
-        background-color: #373e5c;
-        border-radius: 16px;
-        text-align: center;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .industry-item img {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 10px;
-        transition: transform 0.4s ease;
-      }
-      
-      .industry-item p {
-        font-size: 1rem;
-        color: #fafbfc;
-        font-weight: 500;
-        transition: color 0.3s ease;
-      }
-      
-      /* Hover Effects */
-      .industry-item:hover {
-        transform: translateY(-10px) scale(1.03);
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
-        color: #0d0d0e;
-      }
-
-      .industry-item:hover h3,
+.industry-item:hover h3,
 .industry-item:hover p {
-  color: #0d0d0e; /* Set text color to black on hover */
+  color: #0d0d0e; /* Change text color on hover */
 }
-      
-      /* Animated icon zoom on hover */
-      .industry-item:hover img {
-        transform: scale(1.1) rotate(5deg);
-      }
-      
-      /* Glow and color change per item with smooth transitions */
+
+/* Animated icon zoom on hover */
+.industry-item:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Glow and color change per item with smooth transitions */
 .industry-item:nth-child(1):hover {
   background: linear-gradient(145deg, #d1f5d3, #98e89b); /* Smooth green gradient */
   box-shadow: 0 0 20px #4ade80;
@@ -400,24 +456,17 @@ margin: 10px; /* adds spacing just in case */
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Social Icons */
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+}
 
-
-      /* Continue with more custom hover styles if needed */
-          
-      
-   
-
-    .social-icons a {
-      color: #fff;
-      margin: 0 15px;
-    }
-
-    /* Responsive Grid Tweaks */
+/* ======= Responsive Grid Tweaks ======= */
 @media (max-width: 1200px) {
   .service-cards {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .industry-icons {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -427,7 +476,6 @@ margin: 10px; /* adds spacing just in case */
   .service-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .industry-icons {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -437,24 +485,46 @@ margin: 10px; /* adds spacing just in case */
   .services-header h1 {
     font-size: 28px;
   }
-
   .services-header p {
     font-size: 1rem;
   }
-
   .service-cards {
     grid-template-columns: 1fr;
   }
-
   .industry-icons {
     grid-template-columns: 1fr;
   }
-
   .service-card,
   .industry-item {
     width: 100%;
     max-width: 320px;
     margin: auto;
+  }
+}
+
+/* Additional responsive adjustments for very small devices */
+@media (max-width: 480px) {
+  .industries-we-serve {
+    padding: 60px 10px;
+  }
+  .industries-we-serve h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .industries-we-serve p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .industry-item {
+    padding: 20px 10px;
+    height: auto;
+  }
+  .industry-item img {
+    width: 50px;
+    height: 50px;
+  }
+  .industry-item p {
+    font-size: 0.9rem;
   }
 }
 
@@ -475,4 +545,29 @@ margin: 10px; /* adds spacing just in case */
 
 .tech-icons img:hover {
   transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tech-icons {
+    gap: 15px;
+    padding: 8px;
+  }
+  
+  .tech-icons img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-icons {
+    gap: 10px;
+    padding: 5px;
+  }
+  
+  .tech-icons img {
+    width: 40px;
+    height: 40px;
+  }
 }
