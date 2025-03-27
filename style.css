@@ -356,103 +356,174 @@ gap: 50px;
 
 /* Image Card */
 #expert-solutions .col.image-col {
-flex: 1;
-min-width: 300px;
-max-width: 500px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #expert-solutions .image-card img,
 #expert-solutions .image-card video {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-transition: transform 0.6s ease;
-border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+  border-radius: 20px;
 }
 
-
 #expert-solutions .image-card:hover {
-transform: scale(1.02);
-box-shadow: 0 0 35px rgba(0, 255, 255, 0.25);
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.25);
 }
 
 #expert-solutions .image-card img {
-width: 100%;
-height: auto;
-display: block;
-transition: transform 0.6s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
 }
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  #expert-solutions .col.image-col {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #expert-solutions .image-card img,
+  #expert-solutions .image-card video {
+    height: auto;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #expert-solutions .col.image-col {
+    padding: 10px;
+  }
+
+  #expert-solutions .image-card img,
+  #expert-solutions .image-card video {
+    border-radius: 12px;
+  }
+}
+
 
 /* Text Content */
 #expert-solutions .col.text-col {
-flex: 1;
-min-width: 300px;
-max-width: 600px;
-color: #eaeaea;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  color: #eaeaea;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #expert-solutions h1 {
-font-size: 34px;
-font-weight: 900;
-color: #ffffff;
-background: linear-gradient(to right, #00ffff, #ff00ff);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-animation: glow-text 3s ease-in-out infinite alternate;
+  font-size: 34px;
+  font-weight: 900;
+  color: #ffffff;
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow-text 3s ease-in-out infinite alternate;
 }
 
 @keyframes glow-text {
-from {
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-}
-to {
-  text-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
-}
+  from {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  }
+  to {
+    text-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+  }
 }
 
 #expert-solutions hr {
-border: 0;
-height: 2px;
-background: linear-gradient(to right, #00ffff, #ff00ff);
-margin: 20px 0;
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  margin: 20px 0;
 }
 
 #expert-solutions p {
-font-size: 16px;
-margin-bottom: 5px;
-color: #ccc;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #ccc;
 }
 
 #expert-solutions ul {
-margin-top: 15px;
-padding-left: 20px;
-color: #ddd;
+  margin-top: 15px;
+  padding-left: 20px;
+  color: #ddd;
 }
 
 #expert-solutions ul li {
-margin-bottom: 10px;
-line-height: 1.6;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 /* Button */
 #expert-solutions .glow-button {
-margin-top: 20px;
-padding: 12px 26px;
-background: linear-gradient(to right, #ff007f, #00ffff);
-border: none;
-border-radius: 30px;
-color: white;
-font-weight: bold;
-cursor: pointer;
-transition: all 0.4s ease;
-box-shadow: 0 0 15px rgba(255, 0, 128, 0.3);
+  margin-top: 20px;
+  padding: 12px 26px;
+  background: linear-gradient(to right, #ff007f, #00ffff);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.3);
 }
 
 #expert-solutions .glow-button:hover {
-transform: scale(1.07);
-box-shadow: 0 0 25px rgba(0, 255, 255, 0.4), 0 0 15px rgba(255, 0, 255, 0.3);
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4), 0 0 15px rgba(255, 0, 255, 0.3);
 }
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  #expert-solutions .col.text-col {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #expert-solutions h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #expert-solutions p,
+  #expert-solutions ul {
+    font-size: 15px;
+  }
+
+  #expert-solutions .glow-button {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #expert-solutions h1 {
+    font-size: 24px;
+  }
+
+  #expert-solutions p,
+  #expert-solutions ul li {
+    font-size: 14px;
+  }
+
+  #expert-solutions .glow-button {
+    font-size: 15px;
+  }
+}
+
 
 #experience-section {
 position: relative;
