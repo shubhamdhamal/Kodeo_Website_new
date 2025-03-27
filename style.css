@@ -537,7 +537,7 @@ z-index: 1;
 content: '';
 position: absolute;
 inset: 0;
-background: url('./assets/img/Index/backround image.png') no-repeat center center / cover;
+background: url('service.jpeg') no-repeat center center / cover;
 filter: blur(8px);
 opacity: 0.3;
 z-index: -1;
