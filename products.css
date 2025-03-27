@@ -143,8 +143,41 @@ padding: 60px 0;
   }
 
   #hero5 {
+    position: relative;
     width: 100%;
     height: 80vh;
-    background: rgba(0, 0, 0, 0.5) url("product.jpg") center center no-repeat;
-    background-size: cover;
+    overflow: hidden;
   }
+  
+  #hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 30vh;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  
+  
