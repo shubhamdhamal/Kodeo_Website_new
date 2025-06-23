@@ -28,6 +28,7 @@
     padding: 0 10px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    justify-content: center;
     -webkit-overflow-scrolling: touch;
   }
   

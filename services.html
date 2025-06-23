@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kodeo Software Technologies - Services</title>
+  <link rel="icon" type="image/gif" href="logo.gif" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="services.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="script.js" defer></script>
 </head>
+
 <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -31,43 +26,45 @@
   </section> -->
 
   <!-- ======= Header ======= -->
-<header>
-  <nav class="navbar">
-    <ul class="nav-left">
-      <li><a href="./index.html">Home</a></li>
-      <li><a class="active" href="#hero">Services</a></li>
-      <li><a href="./career.html">Career</a></li>
-    </ul>
-
-    <a href="index.html" class="logo">
-      <img src="logo.gif" alt="Kodeo Logo" class="logo-gif" />
-    </a>
-
-    <ul class="nav-right">
-      <li><a href="./products.html">Product</a></li>
-      <li><a href="./about_us.html">About-Us</a></li>
-      <li><a href="./contact_us.html">Contact</a></li>
-    </ul>
-
-    <!-- Hamburger for Mobile -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-left">
+        
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./career.html">Career</a></li>
+      </ul>
+  
+      <a href="index.html" class="logo">
+        <img src="logo.gif" alt="Kodeo Logo" class="logo-gif" />
+      </a>
+  
+      <ul class="nav-right">
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./contact_us.html">Contact</a></li>
+      </ul>
+  
+      <!-- Hamburger for Mobile -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  
+    <!-- Mobile menu links -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./career.html">Career</a></li>
+        <li><a href="./products.html">Product</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./contact_us.html">Contact</a></li>
+      </ul>
     </div>
-  </nav>
-
-  <!-- Mobile menu links -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="./Services.html">Services</a></li>
-      <li><a href="./career.html">Career</a></li>
-      <li><a href="./products.html">Product</a></li>
-      <li><a href="./about_us.html">About Us</a></li>
-      <li><a href="./contact_us.html">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
+  </header>
 <!-- ======= Hero Section with Video Background ======= -->
 <section class="hero-section">
   <!-- Video element -->
@@ -85,241 +82,189 @@
   </div>
 </section>
 
-<style>
-  /* ======= General Styles ======= */
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: #0e0b1e; /* Dark background */
-    color: #f0f0f0; /* Light text */
-    margin: 0;
-    padding: 0;
-  }
+  <style>
+    /* ======= General Styles ======= */
+   /* ======= General Styles ======= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0e0b1e; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  margin: 0;
+  padding: 0;
+}
+
+/* ======= Header Section ======= */
+header {
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap;
+  padding: 10px 30px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Reset Bootstrap styles affecting links */
+.navbar a {
+  color: #a5a4a4 !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+.navbar a:hover {
+  color: #e1bdfb !important;
+}
+
+/* ======= Hero Section with Video Background ======= */
+.hero-section {
+  position: relative;
+  height: 60vh; /* Adjusted height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   
-  /* ======= Header Section ======= */
-  header {
-    background: transparent !important;
-    backdrop-filter: blur(10px) !important;
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
   
-  .navbar {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-wrap: wrap;
-    padding: 10px 30px !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-  
-  /* Reset Bootstrap styles affecting links */
-  .navbar a {
-    color: #a5a4a4 !important;
-    text-decoration: none !important;
-    font-weight: bold !important;
-  }
-  
-  .navbar a:hover {
-    color: #e1bdfb !important;
-  }
-  
-  .hamburger {
-    display: none;
-  }
-  
-  .mobile-menu {
-    display: none;
-  }
-  
-  /* ======= Hero Section with Video Background ======= */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #d1cfff;
+}
+/* ===== Fix hero overlap under fixed header ===== */
+.hero-section {
+  padding-top: 100px; /* space for the fixed header */
+}
+
+@media (max-width: 768px) {
   .hero-section {
-    position: relative;
-    height: 60vh; /* Adjusted height to make it smaller */
-    display: flex;
-    align-items: center;
+    padding-top: 120px; /* more space for mobile header */
+  }
+}
+
+.hero-content .btn {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background-color: #3f51b5;
+}
+
+/* ======= Responsive Fix for Smaller Devices ======= */
+@media (max-width: 768px) {
+  .navbar {
     justify-content: center;
-    text-align: center;
-    overflow: hidden;
+    padding: 10px 15px !important;
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* 100% height of the container (hero-section) */
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
-    z-index: -1;
-  }
-  
-  .hero-content {
-    z-index: 2;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  }
-  
+}
+
+/* ======= Extra Responsiveness for Very Small Devices ======= */
+@media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
-  
+
   .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #d1cfff;
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
-  
+
   .hero-content .btn {
-    background-color: #5c6bc0;
-    color: white;
-    padding: 14px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
-  
-  .hero-content .btn:hover {
-    background-color: #3f51b5; /* Darker purple on hover */
+
+  .navbar {
+    padding: 10px 15px !important;
   }
-  
-  /* ======= Mobile Menu Styling ======= */
-  @media (max-width: 768px) {
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .hamburger span {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px;
-      background-color: #fff;
-    }
-  
-    .mobile-menu {
-      display: block;
-      background-color: #1a1a2e;
-      padding: 20px;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 200px;
-    }
-  
-    .mobile-menu ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-    }
-  
-    .mobile-menu ul li {
-      margin: 10px 0;
-    }
-  
-    .mobile-menu ul li a {
-      color: #f0f0f0;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-  
-    .mobile-menu ul li a:hover {
-      color: #b380ff; /* Light purple on hover */
-    }
-  }
-  
-  /* ======= Extra Responsiveness for Very Small Devices ======= */
-  @media (max-width: 480px) {
-    .hero-content h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
+}
+
+    </style>
     
-    .hero-content p {
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-    
-    .hero-content .btn {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-    }
-    
-    .navbar {
-      padding: 10px 15px !important;
-    }
-    
-    .mobile-menu {
-      width: 160px;
-      padding: 15px;
-      top: 50px;
-    }
-    
-    .mobile-menu ul li a {
-      font-size: 1rem;
-    }
-  }
-  </style>
-  
 
   <!-- Services Section -->
-  <section class="services-container">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="service-card" data-service="cyberSecurity" onclick="showServiceDetails(this)">
-        <img src="assets/img/Images/SEVICES1.jpg"Cyber Security">
-        <h3>Cyber Security</h3>
-        <p>Protect your business with advanced security solutions</p>
-      </div>
-      <div class="service-card" data-service="aiAndML" onclick="showServiceDetails(this)">
-        <img src="assets/img/Images/SERVICES2.jpg" alt="AI & Machine Learning">
-        <h3>AI & Machine Learning</h3>
-        <p>Innovative AI and ML solutions for business intelligence</p>
-      </div>
-      <div class="service-card" data-service="mobileApp" onclick="showServiceDetails(this)">
-        <img src="assets/img/Images/SERVICES3.jpg" alt="Mobile App">
-        <h3>Mobile Application</h3>
-        <p>Custom-built mobile apps for Android & iOS</p>
-      </div>
-      <div class="service-card" data-service="webDevelopment" onclick="showServiceDetails(this)">
-        <img src="assets/img/Images/SERVICES4.jpg" alt="Web Development">
-        <h3>Web Development</h3>
-        <p>Responsive, SEO-optimized websites for every business</p>
-      </div>
-      <div class="service-card" data-service="digMarketing" onclick="showServiceDetails(this)">
-        <img src="assets/img/Images/SERVICES6.jpg" alt="digMarketing">
-        <h3>Digital Marketing</h3>
-        <p>It uses online channels to promote brands, engage customers, and drive sales</p>
-      </div>
-      
-      <div class="service-card" data-service="iot" onclick="showServiceDetails(this)">
-        <img src="assets/img/Images/SERVICES5.jpg" alt="IOT">
-        <h3>IOT</h3>
-        <p>Empowering businesses with smart IoT solutions for seamless connectivity and automation</p>
-      </div>
+<!-- Services Section -->
+<section class="services-container">
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <!-- Existing Service Cards -->
+    <div class="service-card" data-service="cyberSecurity" onclick="showServiceDetails(this)">
+      <img src="assets/img/Images/SEVICES1.jpg" alt="Cyber Security">
+      <h3>Cyber Security</h3>
+      <p>Protect your business with advanced security solutions</p>
     </div>
-  </section>
+    <div class="service-card" data-service="aiAndML" onclick="showServiceDetails(this)">
+      <img src="assets/img/Images/SERVICES2.jpg" alt="AI & Machine Learning">
+      <h3>Artifical Intelligence</h3>
+      <p>Innovative AI and ML solutions for business intelligence</p>
+    </div>
+    <!-- New Service Cards -->
+    <div class="service-card" data-service="machineLearning" onclick="showServiceDetails(this)">
+      <img src="assets/img/Images/S23.jpg" alt="Machine Learning">
+      <h3>Machine Learning</h3>
+      <p>Leverage advanced algorithms and data to drive smarter business decisions</p>
+    </div>
+    <div class="service-card" data-service="softwareDevelopment" onclick="showServiceDetails(this)">
+      <img src="assets/img/Images/SOFTWARE.jpg" alt="Software Development">
+      <h3>Software Development</h3>
+      <p>Custom software solutions designed to meet your business requirements</p>
+    </div>
+  </div>
+</section>
+
   
 
   <!-- Technology Stack Section -->
@@ -618,13 +563,14 @@
 
 
   <!-- ======= Footer ======= -->
+   
+
   <footer>
     <div class="footer-container">
     
       <div class="footer-box">
         
         <img src="logo.gif" alt="Kodeo Software Technology Logo" class="footer-logo">
-        <h4>Services</h4>
         <p>We are a skilled team delivering innovative websites, apps, and software with reliable IT solutions.</p>
         <div class="footer-social">
           <a href="https://fb.me/Kodeosoftwaretechnology" target="blank" class="facebook">
@@ -648,33 +594,26 @@
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="./about_us.html">About US</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="./contact_us.html">Contact</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./services.html">Services</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="./career.html">Career</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Our Terms and Conditions</a></li>
         </ul>
       </div>
   
       <div class="footer-box">
         <h4>Our Services</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Website Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">App Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Digital Marketing / Project</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Android Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">IOS Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Creative Designs</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Database Management</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Cyber Security</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">IT Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./cyber_service.html">Cyber Security</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./aiml_service.html">Artifical Intelligence</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./MachineLearning.html">Machine Learning</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./web_service.html">Software Development</a></li>
+         
         </ul>
       </div>
   
       <div class="footer-box footer-contact">
         <h4>Contact Us</h4>
-        <p><i class="fas fa-phone-alt"></i> +91 73850 53983</p>
         <p><i class="fas fa-envelope"></i> info@kodeosoftwaretechnology.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Office no.733, Gera Imperium Rise,<br>Hinjewadi Phase 2, Pune,411057</p>
+        <p><i class="fas fa-map-marker-alt"></i> Office no.733, Gera Imperium Rise,<br>Hinjewadi Phase 2, Pune, 411057</p>
       </div>
   
     </div>
@@ -689,15 +628,14 @@
       </div>
     </div>
   </footer>
+  
+  
+  
 
   <script>
     AOS.init({ once: true });
   </script>
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("show");
-    }
   
     // Hide navbar on scroll down
     let lastScrollTop = 0;
@@ -732,10 +670,9 @@
       const servicePages = {
           "cyberSecurity": "cyber_service.html",
           "aiAndML": "aiml_service.html",
-          "mobileApp": "mobile_app_service.html",
-          "webDevelopment": "web_service.html",
-          "digMarketing": "dig_marketing_service.html",
-          "iot": "iot_service.html"
+          "machineLearning": "MachineLearning.html",
+          "softwareDevelopment": "web_service.html",
+          
       };
   
       // Check if the selected service exists in the mapping and redirect to the correct page
@@ -747,10 +684,21 @@
   }
   
   </script>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+  }
+</script>
+<script>
+  const menuLinks = document.querySelectorAll('.mobile-menu a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.remove('show');
+    });
+  });
+</script>
 
-  <style>
-    
-  </style>
 </body>
 
 </html>

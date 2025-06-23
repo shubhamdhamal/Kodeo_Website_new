@@ -60,8 +60,19 @@ header {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    margin-top: 80px; /* Added margin to avoid content behind transparent navbar */
+    padding-top: 120px;
   }
+  /* Common fix for hero sections when navbar is fixed */
+.hero-section {
+  padding-top: 100px;
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 120px;
+  }
+}
+
   .hero-video {
     position: absolute;
     top: 0; left: 0;

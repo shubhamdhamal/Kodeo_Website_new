@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Kodeo Software Technology</title>
+  <link rel="icon" type="image/gif" href="logo.gif" />
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,7 +42,7 @@
     <nav class="navbar">
       <ul class="nav-left">
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./Services.html">Services</a></li>
+        <li><a href="./services.html">Services</a></li>
         <li><a href="./career.html">Career</a></li>
       </ul>
   
@@ -64,8 +65,8 @@
     <!-- Mobile menu links -->
     <div class="mobile-menu" id="mobileMenu">
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="./Services.html">Services</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
         <li><a href="./career.html">Career</a></li>
         <li><a href="./products.html">Product</a></li>
         <li><a href="./about_us.html">About Us</a></li>
@@ -160,13 +161,8 @@
     font-size: 1.5rem;
   }
 }
-</style>
-
-
-
-  
-    
-   </section><!-- End Main -->
+</style>   
+</section><!-- End Main -->
  
 <section class="container">
      <div class="row" style="margin-bottom: 40px; margin-top: 40px;">
@@ -258,13 +254,14 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
+  
+
   <footer>
     <div class="footer-container">
     
       <div class="footer-box">
         
         <img src="logo.gif" alt="Kodeo Software Technology Logo" class="footer-logo">
-        <h4>Contact-Us</h4>
         <p>We are a skilled team delivering innovative websites, apps, and software with reliable IT solutions.</p>
         <div class="footer-social">
           <a href="https://fb.me/Kodeosoftwaretechnology" target="blank" class="facebook">
@@ -288,33 +285,26 @@
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="./about_us.html">About US</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="./contact_us.html">Contact</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./services.html">Services</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="./career.html">Career</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Our Terms and Conditions</a></li>
         </ul>
       </div>
   
       <div class="footer-box">
         <h4>Our Services</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Website Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">App Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Digital Marketing / Project</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Android Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">IOS Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Creative Designs</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Database Management</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Cyber Security</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">IT Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./cyber_service.html">Cyber Security</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./aiml_service.html">Artifical Intelligence</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./MachineLearning.html">Machine Learning</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="./web_service.html">Software Development</a></li>
+         
         </ul>
       </div>
   
       <div class="footer-box footer-contact">
         <h4>Contact Us</h4>
-        <p><i class="fas fa-phone-alt"></i> +91 73850 53983</p>
         <p><i class="fas fa-envelope"></i> info@kodeosoftwaretechnology.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Office no.733, Gera Imperium Rise,<br>Hinjewadi Phase 2, Pune</p>
+        <p><i class="fas fa-map-marker-alt"></i> Office no.733, Gera Imperium Rise,<br>Hinjewadi Phase 2, Pune, 411057</p>
       </div>
   
     </div>
@@ -329,6 +319,9 @@
       </div>
     </div>
   </footer>
+  
+  
+  
   
 
   <script src="career.js" defer></script>
@@ -352,6 +345,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
 </body>
 
 </html>
