@@ -54,24 +54,25 @@ header {
   /* ===== HERO SECTION (VIDEO) ===== */
   .hero-section {
     position: relative;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    padding-top: 120px;
+    box-sizing: border-box; /* Add box-sizing */
   }
-  /* Common fix for hero sections when navbar is fixed */
-.hero-section {
-  padding-top: 100px;
-}
 
-@media (max-width: 480px) {
-  .hero-section {
-    padding-top: 120px;
+  /* Move padding to the content to avoid affecting section height */
+  .hero-content {
+    padding-top: 80px; /* Adjust for header height */
   }
-}
+
+  @media (max-width: 480px) {
+    .hero-content {
+      padding-top: 100px; /* Adjust for smaller screens if needed */
+    }
+  }
 
   .hero-video {
     position: absolute;
@@ -442,7 +443,7 @@ color: #ddd;
 
   .clients-track {
     display: flex;
-    animation: scrollLogos 25s linear infinite;
+    animation: scrollLogos 10s linear infinite;
     gap: 60px;
     padding: 10px 0;
   }

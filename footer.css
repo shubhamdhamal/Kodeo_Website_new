@@ -75,6 +75,11 @@ footer {
     transition: color 0.3s;
 }
 
+.footer-contact p #location{
+    margin-right: 25px;
+}
+
+
 .footer-contact i {
     color: #00ffff; /* Neon blue for icons */
     font-size: 1.2rem;
@@ -152,7 +157,7 @@ footer {
     margin-top: -10px; /* Adjust the value as needed */
 }
 .footer-box:nth-child(4) {
-    margin-top: -50px; /* Adjust the value as needed */
+    margin-top: -20px; /* Adjust the value as needed */
 }
 
 
@@ -180,6 +185,7 @@ footer {
         gap: 8px;
     }
 
+  
     .footer-box h4 {
         font-size: 1.1rem; /* Slightly smaller text for mobile */
     }
