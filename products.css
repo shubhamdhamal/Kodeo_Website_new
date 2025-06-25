@@ -145,8 +145,11 @@ padding: 60px 0;
   #hero5 {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #hero-video {
@@ -176,8 +179,34 @@ padding: 60px 0;
     z-index: 1;
     color: white;
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 0;
     animation: fadeInUp 1.5s ease-out forwards;
+  }
+  
+  .hero-content p {
+    margin-top: 20px;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+  }
+
+  .hero-content .btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #5c6bc0;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+  .hero-content .btn:hover {
+    background-color: #3f51b5;
   }
   
   
