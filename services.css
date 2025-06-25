@@ -108,10 +108,9 @@ body {
 }
 
 .service-cards {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: repeat(4, 1fr); /* 4 per row */
   gap: 30px;
-  padding: 0 70px; /* Prevent edge contact */
   box-sizing: border-box;
 }
 
@@ -119,7 +118,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px; /* Adds spacing between cards */
+  text-align: center;
   padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
@@ -155,7 +154,7 @@ body {
 .service-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #7d7d7d;
+  color: #61e524;
   font-weight: 600;
 }
 
@@ -280,7 +279,7 @@ body {
   padding: 80px 20px;
   background: #252d44;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .industries-we-serve h2 {

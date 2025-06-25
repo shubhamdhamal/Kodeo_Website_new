@@ -149,7 +149,7 @@ nav ul li a:hover {
     width: 100%;
     padding: 12px;
     background: rgba(255, 255, 255, 0.07);
-    color: #141414;
+    color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     font-size: 15px;
@@ -182,26 +182,6 @@ nav ul li a:hover {
   .form-group textarea:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.1);
-    border-color: #00ffff;
-  }
-  
-  /* Relocate Buttons */
-  .relocate-options {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .relocate-option {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  .relocate-option:hover {
-    background: #00ffff33;
     border-color: #00ffff;
   }
   
